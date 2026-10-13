@@ -1,0 +1,73 @@
+job	run	started_from	last_iteration	done	flags
+2361048	?	scratch	1/2		num_steps_per_env=16
+2361068	?	random-sampling@1035	1036/1037	DONE	num_steps_per_env=32
+2361066	?	scratch	2/3	DONE	
+2361237	?	random-sampling@1035	1035/1036	DONE	
+2361538	C-gaitnet_t-step	random-sampling@1035	1036/1485		arch=gaitnet_t recipe=step num_steps_per_env=500
+2361564	D-gaitnet_t-teacher	random-sampling@1035	1043/1485		arch=gaitnet_t recipe=teacher num_steps_per_env=500 privileged
+2361606	D-gaitnet_t-teacher	random-sampling@1035	1058/1485		arch=gaitnet_t recipe=teacher num_steps_per_env=500 privileged
+2361563	C-gaitnet_t-step	random-sampling@1035	1069/1485		arch=gaitnet_t recipe=step num_steps_per_env=500
+2361667	PC-fast	random-sampling@1035	1077/6035		arch=gaitnet_t recipe=step num_steps_per_env=100 num_mini_batches=8 init_at_random_ep_len
+2361666	PB-fast	random-sampling@1035	1091/6035		arch=gaitnet recipe=step num_steps_per_env=100 num_mini_batches=8 init_at_random_ep_len
+2361536	A-gaitnet-thesis	random-sampling@1035	1097/1485		arch=gaitnet recipe=thesis num_steps_per_env=500
+2361537	B-gaitnet-step	random-sampling@1035	1098/1485		arch=gaitnet recipe=step num_steps_per_env=500
+2361716	WC-walk-fast	random-sampling@1035	1080/3285		arch=gaitnet_t recipe=step num_steps_per_env=100 num_mini_batches=8 init_at_random_ep_len
+2361717	WD-walk-fast	random-sampling@1035	1079/3285		arch=gaitnet_t recipe=teacher num_steps_per_env=100 num_mini_batches=8 privileged init_at_random_ep_len
+2361715	WB-walk-fast	random-sampling@1035	1095/3285		arch=gaitnet recipe=step num_steps_per_env=100 num_mini_batches=8 init_at_random_ep_len
+2361718	WDc-walk-fast-critic	random-sampling@1035	1078/3285		arch=gaitnet_t recipe=teacher num_steps_per_env=100 num_mini_batches=8 privileged critic_tail critic_noop_fix init_at_random_ep_len
+2361714	WB500-walk	random-sampling@1035	1048/1485		arch=gaitnet recipe=step num_steps_per_env=500
+2361791	WD-walk-fast-track	random-sampling@1035	1272/3285		arch=gaitnet_t recipe=teacher num_steps_per_env=100 num_mini_batches=8 privileged init_at_random_ep_len
+2361961	SDc-scratch-fast-critic	scratch	101/2400		arch=gaitnet_t recipe=teacher num_steps_per_env=100 num_mini_batches=8 privileged critic_tail critic_noop_fix init_at_random_ep_len
+2361957	SB500-scratch	scratch	65/780		arch=gaitnet recipe=step num_steps_per_env=500 critic_noop_fix
+2362201	WD-walk-fast-track-r1	WD-walk-fast-track@1240	1304/3285		arch=gaitnet_t recipe=teacher num_steps_per_env=100 num_mini_batches=4 privileged init_at_random_ep_len
+2361959	SC-scratch-fast	scratch	115/2500		arch=gaitnet_t recipe=step num_steps_per_env=100 num_mini_batches=8 critic_noop_fix init_at_random_ep_len
+2361792	WDc-walk-fast-track-critic	random-sampling@1035	1344/3285		arch=gaitnet_t recipe=teacher num_steps_per_env=100 num_mini_batches=8 privileged critic_tail critic_noop_fix init_at_random_ep_len
+2361960	SD-scratch-fast	scratch	101/2400		arch=gaitnet_t recipe=teacher num_steps_per_env=100 num_mini_batches=8 privileged critic_noop_fix init_at_random_ep_len
+2361793	WB500-walk-track	random-sampling@1035	1133/1485		arch=gaitnet recipe=step num_steps_per_env=500
+2361790	WC-walk-fast-track	random-sampling@1035	1359/3285		arch=gaitnet_t recipe=step num_steps_per_env=100 num_mini_batches=8 init_at_random_ep_len
+2361789	WB-walk-fast-track	random-sampling@1035	1462/3285		arch=gaitnet recipe=step num_steps_per_env=100 num_mini_batches=8 init_at_random_ep_len
+2361958	SB-scratch-fast	scratch	230/3400		arch=gaitnet recipe=step num_steps_per_env=100 num_mini_batches=8 critic_noop_fix init_at_random_ep_len
+2362292	WDc-walk-fast-track-critic-r1	WDc-walk-fast-track-critic@1340	1511/3285		arch=gaitnet_t recipe=teacher num_steps_per_env=100 num_mini_batches=8 walk_p_down=0.3 privileged critic_tail critic_noop_fix init_at_random_ep_len
+2362289	WB-walk-fast-track-r1	WB-walk-fast-track@1460	1986/3285		arch=gaitnet recipe=step num_steps_per_env=100 num_mini_batches=8 walk_p_down=0.3 init_at_random_ep_len
+2362291	WD-walk-fast-track-r2	WD-walk-fast-track-r1@1300	1672/3285		arch=gaitnet_t recipe=teacher num_steps_per_env=100 num_mini_batches=4 walk_p_down=0.3 privileged init_at_random_ep_len
+2362290	WC-walk-fast-track-r1	WC-walk-fast-track@1355	1830/3285		arch=gaitnet_t recipe=step num_steps_per_env=100 num_mini_batches=8 walk_p_down=0.3 init_at_random_ep_len
+2362772	WB-walk-fast-track-r2	WB-walk-fast-track-r1@1985	2093/3285		arch=gaitnet recipe=step num_steps_per_env=100 num_mini_batches=4 walk_p_down=0.3 init_at_random_ep_len
+2362652	WDc-walk-fast-track-critic-r2	WDc-walk-fast-track-critic-r1@1500	1773/3285		arch=gaitnet_t recipe=teacher num_steps_per_env=100 num_mini_batches=4 walk_p_down=0.3 privileged critic_tail critic_noop_fix init_at_random_ep_len
+2362296	SD-scratch-fast-r1	SD-scratch-fast@100	553/2400		arch=gaitnet_t recipe=teacher num_steps_per_env=100 num_mini_batches=8 walk_p_down=0.3 privileged critic_noop_fix init_at_random_ep_len
+2362294	SB-scratch-fast-r1	SB-scratch-fast@225	841/3400		arch=gaitnet recipe=step num_steps_per_env=100 num_mini_batches=8 walk_p_down=0.3 critic_noop_fix init_at_random_ep_len
+2362293	SB500-scratch-r1	SB500-scratch@65	209/780		arch=gaitnet recipe=step num_steps_per_env=500 walk_p_down=0.3 critic_noop_fix
+2362288	WB500-walk-track-r1	WB500-walk-track@1130	1276/1485		arch=gaitnet recipe=step num_steps_per_env=500 walk_p_down=0.3
+2362295	SC-scratch-fast-r1	SC-scratch-fast@115	587/2500		arch=gaitnet_t recipe=step num_steps_per_env=100 num_mini_batches=8 walk_p_down=0.3 critic_noop_fix init_at_random_ep_len
+2362297	SDc-scratch-fast-critic-r1	SDc-scratch-fast-critic@100	557/2400		arch=gaitnet_t recipe=teacher num_steps_per_env=100 num_mini_batches=8 walk_p_down=0.3 privileged critic_tail critic_noop_fix init_at_random_ep_len
+2362922	SC-scratch-fast-r2	SC-scratch-fast-r1@585	1103/2500		arch=gaitnet_t recipe=step num_steps_per_env=100 num_mini_batches=8 walk_p_down=0.3 walk_random_fraction=0.25 max_init_terrain_level=2 critic_noop_fix init_at_random_ep_len
+2362923	SDc-scratch-fast-critic-r2	SDc-scratch-fast-critic-r1@555	1057/2400		arch=gaitnet_t recipe=teacher num_steps_per_env=100 num_mini_batches=8 walk_p_down=0.3 walk_random_fraction=0.25 max_init_terrain_level=2 privileged critic_tail critic_noop_fix init_at_random_ep_len
+2362921	WB500-walk-track-r2	WB500-walk-track-r1@1275	1434/1485		arch=gaitnet recipe=step num_steps_per_env=500 walk_p_down=0.3 walk_random_fraction=0.25 max_init_terrain_level=2
+2363800	SDc-scratch-fast-critic-r3	SDc-scratch-fast-critic-r2@1055	1294/2400		arch=gaitnet_t recipe=teacher num_steps_per_env=100 num_mini_batches=8 commands=forward walk_p_down=0.3 walk_random_fraction=0.25 max_init_terrain_level=2 privileged critic_tail critic_noop_fix init_at_random_ep_len
+2366385	SC-ahead	SC-agnostic@1445	1510/2045		arch=gaitnet_t recipe=step num_steps_per_env=100 num_mini_batches=8 commands=forward controller_randomization=agnostic_ahead walk_p_down=0.3 walk_random_fraction=0.25 max_init_terrain_level=2 critic_noop_fix init_at_random_ep_len
+2365379	SC-agnostic	SC-scratch-fast-r3@1140	1551/2040		arch=gaitnet_t recipe=step num_steps_per_env=100 num_mini_batches=8 commands=forward controller_randomization=agnostic walk_p_down=0.3 walk_random_fraction=0.25 max_init_terrain_level=2 critic_noop_fix init_at_random_ep_len
+2363798	WB500-walk-track-r3	WB500-walk-track-r1@1160	1457/1610		arch=gaitnet recipe=step num_steps_per_env=500 commands=forward walk_p_down=0.3 walk_random_fraction=0.25 max_init_terrain_level=2
+2364455	SC-idm	SC-scratch-fast-r3@890	1590/2500		arch=gaitnet_t recipe=step num_steps_per_env=100 num_mini_batches=8 commands=forward walk_p_down=0.3 walk_random_fraction=0.25 max_init_terrain_level=2 critic_noop_fix idm_inverse init_at_random_ep_len
+2366842	SC-agnostic-mix	SC-agnostic@1300	1319/2040		arch=gaitnet_t recipe=step num_steps_per_env=100 num_mini_batches=8 commands=forward controller_randomization=agnostic_mix walk_p_down=0.3 walk_random_fraction=0.25 max_init_terrain_level=2 critic_noop_fix init_at_random_ep_len
+2366843	SC-ahead-mix	SC-agnostic@1300	1318/2045		arch=gaitnet_t recipe=step num_steps_per_env=100 num_mini_batches=8 commands=forward controller_randomization=agnostic_ahead_mix walk_p_down=0.3 walk_random_fraction=0.25 max_init_terrain_level=2 critic_noop_fix init_at_random_ep_len
+2363799	SC-scratch-fast-r3	SC-scratch-fast-r2@645	1596/2500		arch=gaitnet_t recipe=step num_steps_per_env=100 num_mini_batches=8 commands=forward walk_p_down=0.3 walk_random_fraction=0.25 max_init_terrain_level=2 critic_noop_fix init_at_random_ep_len
+2367010	WB500-walk-track-r4	WB500-walk-track-r3@1455	-	DONE	arch=gaitnet recipe=step num_steps_per_env=500 commands=forward walk_p_up=0.2 walk_p_down=0.3 walk_random_fraction=0.25 max_init_terrain_level=2
+2367106	WB500-walk-track-r4	WB500-walk-track-r3@1455	1464/1900		arch=gaitnet recipe=step num_steps_per_env=500 commands=forward walk_p_up=0.2 walk_p_down=0.3 walk_random_fraction=0.25 max_init_terrain_level=2
+2367013	SC-idm-r2	SC-idm@1590	1614/2500		arch=gaitnet_t recipe=step num_steps_per_env=100 num_mini_batches=8 commands=forward walk_p_up=0.2 walk_p_down=0.3 walk_random_fraction=0.25 max_init_terrain_level=2 critic_noop_fix idm_inverse init_at_random_ep_len
+2367014	SC-agnostic-mix-r2	SC-agnostic-mix@1315	1337/2040		arch=gaitnet_t recipe=step num_steps_per_env=100 num_mini_batches=8 commands=forward controller_randomization=agnostic_mix walk_p_up=0.2 walk_p_down=0.3 walk_random_fraction=0.25 max_init_terrain_level=2 critic_noop_fix init_at_random_ep_len
+2367015	SC-ahead-mix-r2	SC-ahead-mix@1315	1353/2045		arch=gaitnet_t recipe=step num_steps_per_env=100 num_mini_batches=8 commands=forward controller_randomization=agnostic_ahead_mix walk_p_up=0.2 walk_p_down=0.3 walk_random_fraction=0.25 max_init_terrain_level=2 critic_noop_fix init_at_random_ep_len
+2367267	SC-ahead-mix-r3	SC-ahead-mix-r2@1350	1384/2045		arch=gaitnet_t recipe=step num_steps_per_env=100 num_mini_batches=8 commands=forward controller_randomization=agnostic_ahead_mix walk_p_up=0.2 walk_p_down=0.3 walk_random_fraction=0.25 max_init_terrain_level=2 critic_noop_fix init_at_random_ep_len
+2367261	WB500-walk-track-r5	WB500-walk-track-r4@1460	1490/1900		arch=gaitnet recipe=step num_steps_per_env=500 commands=forward walk_p_up=0.2 walk_p_down=0.3 walk_random_fraction=0.25 max_init_terrain_level=6
+2368335	WB500-idm	WB500-walk-track-r3@1440	1467/1900		arch=gaitnet recipe=step num_steps_per_env=500 commands=forward walk_p_up=0.2 walk_p_down=0.3 walk_random_fraction=0.25 max_init_terrain_level=6 idm_inverse
+2368566	WB500-idm-warm	WB500-walk-track-r3@1440	1452/1900		arch=gaitnet recipe=step num_steps_per_env=500 commands=forward walk_p_up=0.2 walk_p_down=0.3 walk_random_fraction=0.25 max_init_terrain_level=6 lr_warmup_iterations=20 idm_inverse
+2368336	WB500-T-idm	WB500-walk-track-r3@1440	1467/1900		arch=gaitnet_t recipe=step num_steps_per_env=500 commands=forward walk_p_up=0.2 walk_p_down=0.3 walk_random_fraction=0.25 max_init_terrain_level=6 idm_inverse
+2367807	WB500-walk-track-r6	WB500-walk-track-r3@1440	1600/1900		arch=gaitnet recipe=step num_steps_per_env=500 commands=forward walk_p_up=0.2 walk_p_down=0.3 walk_random_fraction=0.25 max_init_terrain_level=6
+2367554	SC-agnostic-mix-idm	SC-agnostic-mix-r3@1365	2039/2040	DONE	arch=gaitnet_t recipe=step num_steps_per_env=100 num_mini_batches=8 commands=forward controller_randomization=agnostic_mix walk_p_up=0.2 walk_p_down=0.3 walk_random_fraction=0.25 max_init_terrain_level=2 critic_noop_fix idm_inverse init_at_random_ep_len
+2367647	SC-ahead-mix-idm	SC-ahead-mix-r3@1380	2044/2045	DONE	arch=gaitnet_t recipe=step num_steps_per_env=100 num_mini_batches=8 commands=forward controller_randomization=agnostic_ahead_mix walk_p_up=0.2 walk_p_down=0.3 walk_random_fraction=0.25 max_init_terrain_level=2 critic_noop_fix idm_inverse init_at_random_ep_len
+2367263	SC-agnostic-mix-r3	SC-agnostic-mix-r2@1335	2039/2040	DONE	arch=gaitnet_t recipe=step num_steps_per_env=100 num_mini_batches=8 commands=forward controller_randomization=agnostic_mix walk_p_up=0.2 walk_p_down=0.3 walk_random_fraction=0.25 max_init_terrain_level=2 critic_noop_fix init_at_random_ep_len
+2369294	WB500-walk-track-r7	WB500-walk-track-r6@1580	1764/1900		arch=gaitnet recipe=step num_steps_per_env=500 commands=forward walk_p_up=0.2 walk_p_down=0.3 walk_random_fraction=0.25 max_init_terrain_level=6 learning_rate=1e-4
+2368602	SC-idm-fast	SC-idm-r3@1845	2425/2500		arch=gaitnet_t recipe=step num_steps_per_env=100 num_mini_batches=8 commands=forward walk_p_up=0.2 walk_p_down=0.3 walk_random_fraction=0.25 max_init_terrain_level=7 max_forward_speed=0.25 lr_warmup_iterations=20 critic_noop_fix idm_inverse init_at_random_ep_len
+2367262	SC-idm-r3	SC-idm-r2@1610	2419/2500		arch=gaitnet_t recipe=step num_steps_per_env=100 num_mini_batches=8 commands=forward walk_p_up=0.2 walk_p_down=0.3 walk_random_fraction=0.25 max_init_terrain_level=7 critic_noop_fix idm_inverse init_at_random_ep_len
+2368817	SC-idm-scratch-s1	scratch	790/1600		preset=sc_idm seed=1
+2368820	SC-idm-scratch-s4	scratch	706/1600		preset=sc_idm seed=4
+2368818	SC-idm-scratch-s2	scratch	763/1600		preset=sc_idm seed=2
+2368819	SC-idm-scratch-s3	scratch	717/1600		preset=sc_idm seed=3
